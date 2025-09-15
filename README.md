@@ -5,14 +5,6 @@ End‑to‑end exploratory data analysis (EDA) and data cleaning project focused
 
 ---
 
-## 🔧 Project Highlights
-- Real‑world messy data (listings with missing values, text fields, dates, categories).
-- Reproducible workflow: `src/` scripts + a clean Jupyter notebook in `notebooks/`.
-- Clear **questions → analyses → insights → visuals** pipeline.
-- Ready to publish on GitHub: badges, structure, and a tidy README.
-
----
-
 ## 📦 Repository Structure
 ```
 airbnb-london-eda/
@@ -36,14 +28,10 @@ airbnb-london-eda/
 ---
 
 ## 🗂️ Dataset
-Use the **Inside Airbnb London** dataset (public) for a specific year/month. You typically need the file:
-- `listings.csv` — main table with price, neighbourhood, host_since, room_type, reviews, etc.
 
 **How to get data:**
 1) Download `listings.csv` (and optionally `calendar.csv`, `reviews.csv`) for **London** from the *Inside Airbnb* project site.  
 2) Put the file(s) into `data/raw/` (keep the original filename, or update notebook arg).
-
-> **Tip:** Prefer the monthly snapshot closest to present day to keep the analysis fresh.
 
 ---
 
@@ -80,51 +68,6 @@ jupyter notebook notebooks/01_eda_airbnb_london.ipynb
 ```
 
 ---
-
-## 🧹 Cleaning & Feature Engineering (implemented)
-- **Price parsing**: strip currency symbols/commas → numeric `price_gbp`  
-- **Date handling**: `host_since` → datetime, compute `host_tenure_days`  
-- **Boolean flags**: `host_is_superhost`, `instant_bookable` → 0/1  
-- **Text features (basic)**: count amenities in `amenities` column → `amenity_count`  
-- **Winsorization** (optional): cap extreme price outliers for stable visuals
-
----
-
-## 📊 Core Visuals (made easy in the notebook)
-- Price distribution (histogram, log‑scale option)
-- Price by room type (boxplot + summary stats)
-- Price vs. reviews / rating / amenity_count (scatter + trendline)
-- Price by neighbourhood (top 15; bar chart)
-- Availability and minimum nights vs. price (binned plots)
-
-> All charts are exported to `reports/figures/` so you can embed them in the README or slides.
-
----
-
-## 🧠 What to Conclude (example angles)
-- **Room type** is the biggest driver of price variance (entire homes >> private rooms).  
-- **Central neighbourhoods** command price premiums; quantify uplift vs city median.  
-- **Superhost & tenure** have modest but noticeable positive association with price.  
-- **Amenity richness** matters up to a point; diminishing returns afterward.  
-- **Outliers** suggest manual review or listing category issues.
-
-Back your claims with **numbers** (medians, IQRs, effect sizes) and **plots**.
-
----
-
-## ✅ Deliverables Checklist
-- [ ] Clean EDA notebook with narrative & conclusions  
-- [ ] Exported figures in `reports/figures/`  
-- [ ] Reproducible cleaning script in `src/`  
-- [ ] `README` with problem, methods, key findings, and next steps
-
----
-
-## 🚀 Next Steps / Extensions
-- Add **geospatial** analysis (borough shapefiles; choropleths).
-- Enrich with **calendar** data to analyze seasonality & price elasticity.
-- Build a **simple pricing model** (baseline regression with k‑fold CV).
-- Wrap a **Streamlit** dashboard for interactive exploration.
 
 ---
 
