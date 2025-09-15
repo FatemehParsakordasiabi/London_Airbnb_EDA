@@ -1,5 +1,5 @@
 # Airbnb London – Data Wrangling & EDA
-End‑to‑end exploratory data analysis (EDA) and data cleaning project focused on **short‑term rental pricing in London**. This repo is designed to showcase **data wrangling, feature engineering, visualization, and storytelling**—exactly what hiring managers look for in a Data Scientist portfolio.
+End‑to‑end exploratory data analysis (EDA) and data cleaning project focused on **short‑term rental pricing in London**. This repo is designed to showcase **data wrangling, feature engineering, visualization, and storytelling**.
 
 > **Goal:** Understand what drives listing prices in London and produce actionable insights with clean visuals and a polished narrative.
 
@@ -47,7 +47,7 @@ Use the **Inside Airbnb London** dataset (public) for a specific year/month. You
 
 ---
 
-## ❓ Business Questions (use these as section headers)
+## ❓ Business Questions 
 1. **Pricing Landscape**: What’s the price distribution overall and by room type (Entire home/private room/shared)?  
 2. **Location Effects**: How do prices vary by borough/neighbourhood? Where are the hottest clusters?  
 3. **Supply & Quality Signals**: Does **number of reviews**, **ratings**, or **amenities** correlate with price?  
